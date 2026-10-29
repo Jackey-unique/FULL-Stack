@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+runtime/
+tools/
+data/private/
+exports/local/
+submission/
+docs/LOCAL_ACCESS.txt
+*.log
