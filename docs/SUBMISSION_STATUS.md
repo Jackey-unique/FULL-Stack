@@ -1,4 +1,4 @@
-> Update 28 October 2026: 52 pytest cases passed after the statistics changes. Postman 12.34.1 Runner recorded 63 passing tests, 0 failed, 0 errors; its screenshot is provided. Native Postman documentation printout remains outstanding. Older dated evidence below remains historical.
+> Update 3 November 2026: the published Postman documentation is at https://documenter.getpostman.com/view/59247931/2sBYHXQdXe. `04` now contains the link, eight pointer-free screenshots with captions, and the original 57-page print-to-PDF output of the public document. No environment was published. Historical Runner evidence remains 48 requests and 63 passing assertions. The only required deliverable still absent is the student's video. The provisional self-evaluation should be reviewed in light of the completed documentation. See `docs/FINAL_AUDIT_2026-11-02.md`; older dated evidence below remains historical.
 
 # Submission evidence status - 27 October 2026
 

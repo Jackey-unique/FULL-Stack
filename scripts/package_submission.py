@@ -18,7 +18,8 @@ def main():
         'README.md', '开始使用.md', 'START_PROJECT.cmd', 'START_DEMO.cmd', 'STOP_PROJECT.cmd', 'RUN_TESTS.cmd', 'setup.ps1', 'start.ps1',
         'stop.ps1', 'docs/API.md', 'docs/DESIGN_AND_AI.md', 'docs/DATA.md', 'docs/openapi.json',
         'docs/TEST_REPORT.md', 'docs/REQUIREMENTS_MAPPING.md', 'docs/SUBMISSION_DESIGN.md',
-        'docs/SUBMISSION_STATUS.md', '项目交接文档.md']
+        'docs/SUBMISSION_STATUS.md', 'docs/FINAL_AUDIT_2026-11-02.md',
+        'docs/POSTMAN_PUBLIC_DOCUMENTATION_URL.txt', '项目交接文档.md']
     with ZipFile(target / 'BrainAgeConnect_Code.zip', 'w', ZIP_DEFLATED) as archive:
         for directory in include_dirs:
             for path in (ROOT / directory).rglob('*'):

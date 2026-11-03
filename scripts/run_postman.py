@@ -5,7 +5,6 @@ import subprocess
 import sys
 import time
 import uuid
-from pathlib import Path
 import requests
 from brainage import ROOT, create_app
 from scripts.seed_demo import seed
@@ -14,7 +13,9 @@ def main():
     name = 'brainage_postman_' + uuid.uuid4().hex
     app = create_app({'MONGO_DB': name})
     seed(app.extensions['mongo_db'], 10)
-    node = shutil.which('node') or str(Path.home() / '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe')
+    node = shutil.which('node')
+    if not node:
+        raise SystemExit('Node.js is required to run Newman; install Node.js and ensure node is on PATH.')
     newman = ROOT / 'tools/postman-runner/node_modules/newman/bin/newman.js'
     if not newman.is_file():
         raise SystemExit('Install newman with: npm install --prefix tools/postman-runner newman')
